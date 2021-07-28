@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from './components/Button';
 import Gallery from './components/Gallery';
-
+// Julay ta aqui.
 function App() {
   return (
     <div className="App">
