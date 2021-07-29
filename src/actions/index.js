@@ -7,5 +7,8 @@ export const getPicture = (data) => ({ type: GET_PICTURE, data });
 
 export const fetchAPI = () => async (dispatch) => {
   dispatch(requestAPI());
-  const endpoint = '';
-}
+  const endpoint = 'http://aws.random.cat/meow';
+  fetch(endpoint)
+    .then((data) => data.json())
+    .then((response) => dispatch(getPicture(response)));
+};
